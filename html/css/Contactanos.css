@@ -110,15 +110,3 @@ body {
 .contact-form button:hover {
     background-color: #ddd;
 }
-
-/* Sección de redes sociales */
-.social-media {
-    margin-top: 20px;
-}
-
-.social-media a {
-    color: #fff;
-    margin-right: 10px;
-    text-decoration: none;
-    font-size: 20px;
-}
