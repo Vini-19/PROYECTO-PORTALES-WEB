@@ -1,11 +1,26 @@
 /* Estilo para el header donde esta el nombre de la empresa */
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #000;
+    color: #fff;
+}
+
 header {
     display: flex;
     align-items: center;
+    position: fixed;
     justify-content: space-between;
     padding: 0.5rem 1rem;
     background-color: #ff0d0d;
     color: #FFF;
+    z-index: 1000;
+    width: 100%
 }
 /* para el titulo*/
 header h1 {
@@ -39,14 +54,8 @@ header nav ul li a:hover {
     background-color: #555;
 }
 
-/* Estilo general */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    color: #fff;
-}
+
+
 
 /* Contenedor principal */
 .container {
