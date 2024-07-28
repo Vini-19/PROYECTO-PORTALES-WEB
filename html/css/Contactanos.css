@@ -1,0 +1,124 @@
+/* Estilo para el header donde esta el nombre de la empresa */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: #ff0d0d;
+    color: #FFF;
+}
+/* para el titulo*/
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin:0px;
+    padding:0px;
+}
+header nav ul li a {
+    display: inline-block;
+    color:#FFF;
+    text-decoration: none;
+    padding:0.8rem 1rem;
+    transition: background-color 0.5s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        gap: 0;
+    }
+}
+
+/* Sección de ubicación */
+.location, .contact-form {
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.location {
+    background-color: #000;
+    text-align: left;
+}
+
+.contact-form {
+    background-color: #f1c40f;
+    color: #000;
+    text-align: left;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #ddd;
+}
+
+/* Sección de redes sociales */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
