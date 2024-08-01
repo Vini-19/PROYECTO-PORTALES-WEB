@@ -9,7 +9,6 @@ header {
   position: absolute; /* Absoluto para que se superponga sobre el hero */
   width: 100%;
   top: 0;
-  z-index: 2;
   box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
 }
 
@@ -20,7 +19,6 @@ header div {
 
 header img {
   margin-right: 10px;
-  z-index: 1;
 }
 
 nav a {
