@@ -1,5 +1,5 @@
-const header = document.querySelector('header');
-const footer = document.querySelector('footer');
+const header = document.querySelector("header");
+const footer = document.querySelector("footer");
 
 header.innerHTML = `
 <div>
@@ -11,9 +11,7 @@ header.innerHTML = `
         <a href="soporte.html">Help</a>
       </nav>
 
-` 
-
-;
+`;
 
 footer.innerHTML = `
 <section class="redes">

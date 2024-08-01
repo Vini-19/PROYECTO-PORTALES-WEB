@@ -1,0 +1,178 @@
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent; /* Fondo transparente */
+  color: white;
+  position: absolute; /* Absoluto para que se superponga sobre el hero */
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  margin-right: 10px;
+  z-index: 1;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+  white-space: nowrap; /* Evita que los enlaces se envuelvan en nuevas líneas */
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*contenido*/
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  background-color: #f0f0f0; /* Fondo gris para todo el contenedor */
+  padding: 20px; /* Padding para separar los productos del borde del contenedor */
+  border-radius: 10px; /* Opcional: para darle un borde redondeado al contenedor */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Espacio entre la barra de búsqueda y el catálogo */
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px; /* Bordes redondeados solo en los lados izquierdo */
+  outline: none; /* Elimina el borde de enfoque predeterminado */
+}
+
+.search-bar button {
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  border-radius: 0 5px 5px 0; /* Bordes redondeados solo en los lados derecho */
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-bar button img {
+  width: 20px;
+  height: 20px;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas de igual tamaño */
+  gap: 15px; /* Espacio entre los productos */
+}
+
+.producto {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  padding: 10px; /* Padding dentro de cada producto */
+  background-color: #e0e0e0; /* Fondo gris claro para cada producto */
+}
+
+.producto img {
+  width: 100%;
+  max-height: 300px;
+  height: 300px;
+  object-fit: cover; /* Asegura que la imagen se ajuste sin distorsión */
+  border-bottom: 1px solid #ddd;
+}
+
+.producto h3 {
+  text-align: center;
+  color: #333;
+}
+
+.producto p {
+  padding: 0 15px 15px;
+  color: #666;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+/*footer*/
+footer {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 150px;
+  padding: 10px;
+  position: relative;
+  gap: 40px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.redes h3,
+.extras h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.redes button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.redes button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.redes button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.extras {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.extras a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+footer h4 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 14px;
+  color: #fff;
+}
