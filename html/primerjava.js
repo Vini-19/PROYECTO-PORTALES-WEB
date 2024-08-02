@@ -5,7 +5,7 @@ header.innerHTML = `
 <div>
     <a href="inicio.html" class="logo-link">
       <img src="https://placehold.co/64X64" alt="Logo" />
-      <h1>Gunpla Shop</h1>
+      <h1>Hasbun Shop</h1>
     </a>
   </div>
       <nav>
@@ -43,8 +43,8 @@ footer.innerHTML = `
 
       <section class="extras">
         <h3>preguntas?</h3>
-        <a href="#">Preguntas</a>
-        <a href="#">Contáctanos</a>
+        <a href="Preguntas.html">Preguntas</a>
+        <a href="Contactanos.html">Contáctanos</a>
         <a href="#">Sobre nosotros</a>
       </section>
 
