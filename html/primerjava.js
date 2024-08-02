@@ -3,9 +3,11 @@ const footer = document.querySelector("footer");
 
 header.innerHTML = `
 <div>
-        <img src="https://placehold.co/64X64" alt="Logo" />
-        <h1>Gunpla Shop</h1>
-      </div>
+    <a href="inicio.html" class="logo-link">
+      <img src="https://placehold.co/64X64" alt="Logo" />
+      <h1>Gunpla Shop</h1>
+    </a>
+  </div>
       <nav>
         <a href="#">Contact</a>
         <a href="soporte.html">Help</a>
