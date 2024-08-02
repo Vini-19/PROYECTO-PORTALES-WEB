@@ -25,6 +25,9 @@ header div {
 }
 
 .logo-link img {
+  width: 64px; /* Limita el ancho a 64 píxeles */
+  height: 64px; /* Limita la altura a 64 píxeles */
+  border-radius: 50%; /* Hace que la imagen sea circular */
   margin-right: 10px;
 }
 
