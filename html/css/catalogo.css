@@ -32,13 +32,21 @@ header div {
   margin: 0; /* Elimina el margen del h1 para un mejor alineamiento */
 }
 
-nav a {
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  margin-left: 10px;
-  white-space: nowrap; /* Evita que los enlaces se envuelvan en nuevas líneas */
-  background: rgba(0, 0, 0, 0.5);
 }
 
 /* Agrega un margen superior al contenedor principal para que no quede debajo del header */

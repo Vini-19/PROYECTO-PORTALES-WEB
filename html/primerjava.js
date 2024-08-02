@@ -10,10 +10,10 @@ header.innerHTML = `
   </div>
       <nav>
             <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#catalog">Catálogo</a></li>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="#about">Acerca de</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="Contactanos.html">Contacto</a></li>
             </ul>
         </nav>
 
