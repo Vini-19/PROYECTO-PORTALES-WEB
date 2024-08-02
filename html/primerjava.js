@@ -9,9 +9,13 @@ header.innerHTML = `
     </a>
   </div>
       <nav>
-        <a href="#">Contact</a>
-        <a href="soporte.html">Help</a>
-      </nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#catalog">Catálogo</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
 
 `;
 
