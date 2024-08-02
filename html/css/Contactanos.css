@@ -22,30 +22,53 @@ header {
     width: 100%;
 }
 
-.logo img {
-    width: 48px;
-    height: 48px;
+.round-image {
+    width: 50px;  /* Tamaño reducido */
+    height: 50px; /* Tamaño reducido */
+    border-radius: 50%;
+    object-fit: cover; /* Para asegurarte de que la imagen se ajuste bien al contenedor */
 }
 
-nav ul {
+
+header div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .logo-link img {
+    width: 64px; /* Limita el ancho a 64 píxeles */
+    height: 64px; /* Limita la altura a 64 píxeles */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    margin-right: 10px;
+  }
+  
+  .logo-link h1 {
+    margin: 0;
+  }
+  
+  nav ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     margin-left: 20px;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-}
-
-
-
+  }
 
 /* Contenedor principal */
 .container {
@@ -66,9 +89,6 @@ nav ul li a {
     max-width: 500px;
     box-sizing: border-box;
 }
-
-
-
 
 
 .contact-form h2 {
@@ -98,7 +118,7 @@ nav ul li a {
 }
 /* footer para las redes sociales de pie de pagina*/
 footer {
-    background-color: #ff0d0d;
+    background-color: transparent;
     color: white;
     display: flex;
     flex-direction: row;
