@@ -13,45 +13,33 @@ body {
 
 header {
     display: flex;
-    align-items: center;
-    position: fixed;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
-    background-color: #ff0d0d;
-    color: #FFF;
-    z-index: 1000;
-    width: 100%
-}
-/* para el titulo*/
-header h1 {
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-header div {
-    display: flex;
     align-items: center;
-    gap: 1rem;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
 }
 
+.logo img {
+    width: 48px;
+    height: 48px;
+}
 
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
+nav ul {
     list-style: none;
-    margin:0px;
-    padding:0px;
-}
-header nav ul li a {
-    display: inline-block;
-    color:#FFF;
-    text-decoration: none;
-    padding:0.8rem 1rem;
-    transition: background-color 0.5s ease;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-header nav ul li a:hover {
-    background-color: #555;
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 
