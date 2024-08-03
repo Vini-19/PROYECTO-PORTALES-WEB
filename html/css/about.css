@@ -10,12 +10,20 @@ body {
     color: #fff;
 }
 
+.about-section {
+    padding: 50px 20px;
+    background-color: #111;
+    color: #fff;
+    margin-top: 50px;
+}
+
+
 header {
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    position: absolute;
     align-items: center;
-    background-color: transparent; 
+    background-color: transparent;
     padding: 10px 20px;
     color: white;
     width: 100%;
@@ -23,10 +31,9 @@ header {
     z-index: 1000;
 }
 
-
 .round-image {
-    width: 50px; 
-    height: 50px; 
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -44,8 +51,8 @@ header div {
 }
 
 .logo-link img {
-    width: 50px; 
-    height: 50px; 
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -58,15 +65,15 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin:15px;
-    padding:15px;
+    margin: 5px;
+    padding: 5px;
 }
 
 header nav ul li a {
     display: inline-block;
-    color:#FFF;
+    color: #FFF;
     text-decoration: none;
-    padding:0.8rem 1rem;
+    padding: 0.8rem 1rem;
     transition: background-color 0.5s ease;
 }
 
@@ -74,37 +81,48 @@ header nav ul li a:hover {
     background-color: #555;
 }
 
-
 .about-section {
     padding: 40px 20px;
-    background-color: #111; 
+    background-color: #111;
     color: #fff;
 }
 
 .about-section h2 {
     margin-bottom: 20px;
-    color: #e987d0; 
+    color: #e987d0;
 }
 
-.about-section p {
+.content-box {
+    background-color: #333;
+    border: 1px solid #444;
+    padding: 20px;
     margin-bottom: 20px;
-    line-height: 1.6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.team {
+.content-box-item {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    align-items: center;
+    gap: 20px; 
+    margin-bottom: 20px;
 }
 
-.team-member {
-    text-align: center;
-    flex: 1 1 calc(33.333% - 20px);
-    box-sizing: border-box;
+.content-box-item img {
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.content-box-item p {
+    margin: 0;
     color: #fff;
+    flex: 1;
 }
 
-
+.content-box-item.reverse {
+    flex-direction: row-reverse; 
+}
 
 footer {
     background-color: transparent;

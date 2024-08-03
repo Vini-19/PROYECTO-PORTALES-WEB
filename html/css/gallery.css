@@ -10,24 +10,27 @@ body {
     color: #fff;
 }
 
+
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: transparent;
-    color: white;
-    position:absolute;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  box-sizing: border-box;
+  padding-bottom: 20px; 
 }
+
 
 header div {
     display: flex;
     align-items: center;
-    gap: 20px; /* Espacio entre el logo y el título */
+    gap: 20px; 
 }
 
 header img {
@@ -62,14 +65,15 @@ header nav a:hover {
 
 
 .gallery-container {
-    overflow-y: auto;
-    padding: 10px;
-    max-height: 80vh; 
-    margin-top: 60px; 
-    border: 2px solid #fff; 
-    border-radius: 10px;
-    background-color: #383b4e; 
+  overflow-y: auto;
+  padding: 10px;
+  max-height: 80vh;
+  margin-top: 100px; /* Aumenta este valor para más espacio */
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #383b4e;
 }
+
 
 
 .gallery {
