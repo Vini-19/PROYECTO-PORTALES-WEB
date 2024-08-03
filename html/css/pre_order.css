@@ -8,57 +8,47 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f4f4f4;
+  background-color: black;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: transparent; /* gris con 70% de opacidad */
   padding: 10px 20px;
-  background-color: black; /* Fondo negro */
   color: white;
   width: 100%;
+  position: fixed;
   top: 0;
-  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+  z-index: 1000;
 }
 
-header h1 {
-  margin: 0; /* Elimina el margen del h1 para un mejor alineamiento */
-  font-size: 24px; /* Ajusta el tamaño de la fuente del h1 */
+.round-image {
+  width: 50px; /* Tamaño reducido */
+  height: 50px; /* Tamaño reducido */
+  border-radius: 50%;
+  object-fit: cover; /* Para asegurarte de que la imagen se ajuste bien al contenedor */
 }
 
-header .logo {
+header nav ul {
   display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 64px; /* Limita el ancho a 64 píxeles */
-  height: 64px; /* Limita la altura a 64 píxeles */
-  border-radius: 50%; /* Hace que la imagen sea circular */
-  margin-left: 10px;
-}
-
-nav ul {
+  flex-wrap: wrap;
   list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
+  margin: 15px;
+  padding: 15px;
 }
 
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
+header nav ul li a {
+  display: inline-block;
+  color: #fff;
   text-decoration: none;
-  color: white;
-  font-weight: bold;
+  padding: 0.8rem 1rem;
+  transition: background-color 0.5s ease;
 }
 
-nav ul li a:hover {
-  color: #007bff; /* Color al pasar el ratón por encima */
+header nav ul li a:hover {
+  background-color: #555;
 }
 
 /* Espaciado para el contenido */

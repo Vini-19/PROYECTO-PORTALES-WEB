@@ -43,8 +43,8 @@ header h1 {
 
 header nav {
   display: flex;
-  flex-grow: 1; 
-  justify-content: flex-end; 
+  flex-grow: 1;
+  justify-content: flex-end;
 }
 
 header nav ul {
@@ -55,7 +55,7 @@ header nav ul {
 }
 
 header nav ul li {
-  margin: 0 10px; 
+  margin: 0 10px;
 }
 
 header nav a {
@@ -75,7 +75,7 @@ header nav a:hover {
   padding: 50px 20px;
   background-color: #111;
   color: #fff;
-  margin-top: 80px; 
+  margin-top: 80px;
 }
 
 h2 {
