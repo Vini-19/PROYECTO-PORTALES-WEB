@@ -45,7 +45,7 @@ footer.innerHTML = `
         <h3>preguntas?</h3>
         <a href="Preguntas.html">Preguntas</a>
         <a href="Contactanos.html">Contáctanos</a>
-        <a href="about.html">nostros</a>
+        <a href="about.html">Acerca de</a>
       </section>
 
       <h4>@hasbun Shop</h4>

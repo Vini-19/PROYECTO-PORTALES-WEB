@@ -103,68 +103,12 @@ header nav a:hover {
 }
 
 footer {
-  background-color: transparent;
+  background-color: grey;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 150px;
   padding: 10px;
-  position: relative;
   gap: 40px;
-}
-
-.redes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-.redes h3,
-.extras h3 {
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: #fff;
-}
-
-.redes button {
-  display: flex;
-  align-items: center;
-  border: none;
-  background: none;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-.redes button img {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-}
-
-.redes button a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 14px;
-}
-
-.extras {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.extras a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 14px;
-}
-
-footer h4 {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  font-size: 14px;
-  color: #fff;
+  width: 100%;
+  bottom: 0;
 }
