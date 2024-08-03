@@ -2,52 +2,54 @@
   box-sizing: border-box;
   font-family: "Open Sans", Arial, sans-serif;
 }
-/* Estilos Generales */
 
+/* Estilos Generales */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   background-color: #f4f4f4;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: black; /* Fondo negro */
+  background-color: black;
   color: white;
   width: 100%;
   top: 0;
-  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+  box-sizing: border-box;
+  z-index: 1000; /* Asegura que el header esté sobre otros elementos */
+  position: fixed; /* Fijo en la parte superior */
 }
 
 header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1; /* Esto hace que el contenedor logo ocupe todo el espacio posible */
+  flex: 1;
 }
 
 header .logo img {
-  width: 64px; /* Limita el ancho a 64 píxeles */
-  height: 64px; /* Limita la altura a 64 píxeles */
-  border-radius: 50%; /* Hace que la imagen sea circular */
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
 }
 
 header h1 {
-  margin: 0; /* Elimina el margen del h1 para un mejor alineamiento */
-  font-size: 24px; /* Ajusta el tamaño de la fuente del h1 */
-  flex: 1; /* Esto hace que el h1 ocupe todo el espacio posible */
-  text-align: left; /* Alinea el texto del h1 a la izquierda */
+  margin: 0;
+  font-size: 24px;
+  flex: 1;
+  text-align: left;
 }
 
 header nav {
-  flex: 1; /* Esto hace que el contenedor nav ocupe todo el espacio posible */
+  flex: 1;
   display: flex;
-  justify-content: flex-end; /* Alinea los elementos del nav a la derecha */
+  justify-content: flex-end;
 }
 
 header nav ul {
@@ -58,7 +60,7 @@ header nav ul {
 }
 
 header nav ul li {
-  margin-left: 15px; /* Añade margen izquierdo a los elementos de la lista */
+  margin-left: 15px;
 }
 
 header nav ul li a {
@@ -73,7 +75,7 @@ header nav ul li a:hover {
   background-color: #555;
 }
 
-
+/* Main Content */
 main {
   padding: 20px;
   text-align: center;
@@ -141,7 +143,7 @@ h1 {
 /* Botón de Suscribirse */
 .subscribe-button {
   text-align: center;
-  margin-top: auto; /* Asegurar que el botón se mantenga en la parte inferior */
+  margin-top: auto;
 }
 
 .subscribe-button button {
@@ -171,6 +173,7 @@ footer {
   bottom: 0;
 }
 
+/* Tarjetas de Suscripción */
 #basic {
   background-color: grey;
 }

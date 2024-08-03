@@ -15,44 +15,44 @@ body {
   display: flex;
   flex-direction: column;
 }
-/*header*/
+
 /* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: black; /* Fondo negro */
+  background-color: black;
   color: white;
   width: 100%;
   top: 0;
-  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+  box-sizing: border-box;
 }
 
 header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1; /* Esto hace que el contenedor logo ocupe todo el espacio posible */
+  flex: 1;
 }
 
 header .logo img {
-  width: 64px; /* Limita el ancho a 64 píxeles */
-  height: 64px; /* Limita la altura a 64 píxeles */
-  border-radius: 50%; /* Hace que la imagen sea circular */
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
 }
 
 header h1 {
-  margin: 0; /* Elimina el margen del h1 para un mejor alineamiento */
-  font-size: 24px; /* Ajusta el tamaño de la fuente del h1 */
-  flex: 1; /* Esto hace que el h1 ocupe todo el espacio posible */
-  text-align: left; /* Alinea el texto del h1 a la izquierda */
+  margin: 0;
+  font-size: 24px;
+  flex: 1;
+  text-align: left;
 }
 
 header nav {
-  flex: 1; /* Esto hace que el contenedor nav ocupe todo el espacio posible */
+  flex: 1;
   display: flex;
-  justify-content: flex-end; /* Alinea los elementos del nav a la derecha */
+  justify-content: flex-end;
 }
 
 header nav ul {
@@ -63,7 +63,7 @@ header nav ul {
 }
 
 header nav ul li {
-  margin-left: 15px; /* Añade margen izquierdo a los elementos de la lista */
+  margin-left: 15px;
 }
 
 header nav ul li a {
@@ -78,20 +78,18 @@ header nav ul li a:hover {
   background-color: #555;
 }
 
-
 main {
-  margin-top: 60px; /* Ajusta este valor según la altura del header */
+  margin-top: 60px;
 }
 
-/*contenido*/
-
+/* Content */
 .container {
   width: 80%;
   margin: auto;
   overflow: hidden;
-  background-color: #f0f0f0; /* Fondo gris para todo el contenedor */
-  padding: 20px; /* Padding para separar los productos del borde del contenedor */
-  border-radius: 10px; /* Opcional: para darle un borde redondeado al contenedor */
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
   margin-top: 35px;
   margin-bottom: 35px;
 }
@@ -99,7 +97,7 @@ main {
 .search-bar {
   display: flex;
   align-items: center;
-  margin-bottom: 20px; /* Espacio entre la barra de búsqueda y el catálogo */
+  margin-bottom: 20px;
 }
 
 .search-bar input {
@@ -107,14 +105,14 @@ main {
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ddd;
-  border-radius: 5px 0 0 5px; /* Bordes redondeados solo en los lados izquierdo */
-  outline: none; /* Elimina el borde de enfoque predeterminado */
+  border-radius: 5px 0 0 5px;
+  outline: none;
 }
 
 .search-bar button {
   background-color: #ddd;
   border: 1px solid #ddd;
-  border-radius: 0 5px 5px 0; /* Bordes redondeados solo en los lados derecho */
+  border-radius: 0 5px 5px 0;
   padding: 10px;
   cursor: pointer;
 }
@@ -126,8 +124,8 @@ main {
 
 .catalogo {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas de igual tamaño */
-  gap: 15px; /* Espacio entre los productos */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
 }
 
 .producto {
@@ -136,15 +134,15 @@ main {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
-  padding: 10px; /* Padding dentro de cada producto */
-  background-color: #e0e0e0; /* Fondo gris claro para cada producto */
+  padding: 10px;
+  background-color: #e0e0e0;
 }
 
 .producto img {
   width: 100%;
   max-height: 300px;
   height: 300px;
-  object-fit: cover; /* Asegura que la imagen se ajuste sin distorsión */
+  object-fit: cover;
   border-bottom: 1px solid #ddd;
 }
 

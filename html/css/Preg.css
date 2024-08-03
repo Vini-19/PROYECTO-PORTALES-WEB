@@ -8,7 +8,6 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
-  overflow: hidden;
   position: relative;
   min-height: 100vh;
   margin: 0;
@@ -17,43 +16,44 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 /* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: black; /* Fondo negro */
+  background-color: black;
   color: white;
   width: 100%;
   top: 0;
-  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+  box-sizing: border-box;
 }
 
 header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1; /* Esto hace que el contenedor logo ocupe todo el espacio posible */
+  flex: 1;
 }
 
 header .logo img {
-  width: 64px; /* Limita el ancho a 64 píxeles */
-  height: 64px; /* Limita la altura a 64 píxeles */
-  border-radius: 50%; /* Hace que la imagen sea circular */
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
 }
 
 header h1 {
-  margin: 0; /* Elimina el margen del h1 para un mejor alineamiento */
-  font-size: 24px; /* Ajusta el tamaño de la fuente del h1 */
-  flex: 1; /* Esto hace que el h1 ocupe todo el espacio posible */
-  text-align: left; /* Alinea el texto del h1 a la izquierda */
+  margin: 0;
+  font-size: 24px;
+  flex: 1;
+  text-align: left;
 }
 
 header nav {
-  flex: 1; /* Esto hace que el contenedor nav ocupe todo el espacio posible */
+  flex: 1;
   display: flex;
-  justify-content: flex-end; /* Alinea los elementos del nav a la derecha */
+  justify-content: flex-end;
 }
 
 header nav ul {
@@ -64,7 +64,7 @@ header nav ul {
 }
 
 header nav ul li {
-  margin-left: 15px; /* Añade margen izquierdo a los elementos de la lista */
+  margin-left: 15px;
 }
 
 header nav ul li a {
@@ -79,9 +79,7 @@ header nav ul li a:hover {
   background-color: #555;
 }
 
-
-
-/* Fondo */
+/* Background */
 .fondo {
   position: fixed;
   top: 0;
@@ -168,11 +166,15 @@ header nav ul li a:hover {
   z-index: -1;
 }
 
-
-/* Agrega un margen superior al contenedor principal para que no quede debajo del header */
+/* Main Content */
 main {
-  margin-top: 60px; /* Ajusta este valor según la altura del header */
-  flex: 1; /* Permite que el main ocupe el espacio disponible */
+  margin-top: 60px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
 }
 
 /* Menu Toggle */
@@ -236,16 +238,6 @@ nav.menu.show {
     background-color: transparent;
     flex-direction: row;
   }
-}
-
-/* Main Content */
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  flex: 1;
-  flex-direction: column;
 }
 
 /* FAQ Section */
