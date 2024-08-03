@@ -10,9 +10,9 @@ header.innerHTML = `
   </div>
       <nav>
             <ul>
-                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
                 <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="#about">Acerca de</a></li>
+                <li><a href="about.html">Acerca de</a></li>
                 <li><a href="Contactanos.html">Contacto</a></li>
             </ul>
         </nav>
@@ -45,7 +45,7 @@ footer.innerHTML = `
         <h3>preguntas?</h3>
         <a href="Preguntas.html">Preguntas</a>
         <a href="Contactanos.html">Contáctanos</a>
-        <a href="#">Sobre nosotros</a>
+        <a href="about.html">nostros</a>
       </section>
 
       <h4>@hasbun Shop</h4>
