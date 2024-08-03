@@ -12,7 +12,7 @@ header.innerHTML = `
             <ul>
                 <li><a href="soporte.html">Soporte</a></li>
                 <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="about.html">Nostros</a></li>
+                <li><a href="about.html">Acerca de</a></li>
                 <li><a href="Contactanos.html">Contacto</a></li>
             </ul>
         </nav>

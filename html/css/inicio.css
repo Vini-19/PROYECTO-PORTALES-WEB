@@ -3,11 +3,16 @@
   font-family: "Open Sans", Arial, sans-serif;
 }
 body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: black;
-  box-sizing: border-box;
-  overflow-x: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
@@ -342,21 +347,22 @@ nav ul li a {
   border-radius: 5px;
 }
 
-/*footer*/
 /* Footer */
 footer {
-  background-color: grey;
+  background-color: black;
   display: flex;
-  justify-content: center;
+  justify-content: space-around; /* Espacio alrededor de los elementos del footer */
   align-items: flex-start;
-  padding: 10px;
-  gap: 40px;
+  padding: 20px;
   width: 100%;
+  position: relative;
   bottom: 0;
   margin-top: auto; /* Empuja el footer hacia abajo */
+  flex-shrink: 0; /* Evita que el footer se encoja */
 }
 
-.redes {
+.redes,
+.extras {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -391,13 +397,6 @@ footer {
   font-size: 14px;
 }
 
-.extras {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
 .extras a {
   text-decoration: none;
   color: #fff;
@@ -405,9 +404,9 @@ footer {
 }
 
 footer h4 {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
   font-size: 14px;
   color: #fff;
+  position: absolute; /* Posiciona el h4 absolutamente */
+  bottom: 20px; /* Ubica el h4 en la parte inferior */
+  left: 20px; /* Ubica el h4 en la esquina izquierda */
 }
