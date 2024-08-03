@@ -4,8 +4,8 @@
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color: #000;
     color: #fff;
 }
@@ -13,12 +13,12 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    position: fixed;
     align-items: center;
     background-color: transparent; /* gris con 70% de opacidad */
     padding: 10px 20px;
     color: white;
     width: 100%;
+    position: fixed;
     top: 0;
     z-index: 1000;
 }
@@ -30,23 +30,72 @@ header {
     object-fit: cover; /* Para asegurarte de que la imagen se ajuste bien al contenedor */
 }
 
-
 header nav ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin:15px;
-    padding:15px;
+    margin: 15px;
+    padding: 15px;
 }
 
 header nav ul li a {
     display: inline-block;
-    color:#FFF;
+    color: #FFF;
     text-decoration: none;
-    padding:0.8rem 1rem;
+    padding: 0.8rem 1rem;
     transition: background-color 0.5s ease;
 }
 
 header nav ul li a:hover {
     background-color: #555;
+}
+
+/* Servicios */
+.servicios {
+    text-align: center;
+    padding: 20px;
+    margin: 100px 0 20px 0; /* Ajusta el margen superior para dejar espacio para el header fijo */
+}
+
+.servicios h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.feature {
+    text-align: center;
+    padding: 20px;
+    width: 20%; /* Ajusta el ancho para mejor distribución */
+    min-width: 180px;
+    background-color: #fff;
+    color: #000; /* Asegura que el texto sea visible sobre el fondo blanco */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Bordes más redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más prominente */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición para efecto de hover */
+}
+
+.feature:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+}
+
+.feature .icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* Preorder */
+.pre-orders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
