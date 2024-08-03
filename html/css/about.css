@@ -15,7 +15,7 @@ header {
     justify-content: space-between;
     position: fixed;
     align-items: center;
-    background-color: transparent; /* gris con 70% de opacidad */
+    background-color: transparent; 
     padding: 10px 20px;
     color: white;
     width: 100%;
@@ -25,10 +25,10 @@ header {
 
 
 .round-image {
-    width: 50px;  /* Tamaño reducido */
-    height: 50px; /* Tamaño reducido */
+    width: 50px; 
+    height: 50px; 
     border-radius: 50%;
-    object-fit: cover; /* Para asegurarte de que la imagen se ajuste bien al contenedor */
+    object-fit: cover;
 }
 
 header div {
@@ -44,9 +44,9 @@ header div {
 }
 
 .logo-link img {
-    width: 50px; /* Tamaño reducido */
-    height: 50px; /* Tamaño reducido */
-    border-radius: 50%; /* Hace que la imagen sea circular */
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
     margin-right: 10px;
 }
 
@@ -75,7 +75,37 @@ header nav ul li a:hover {
 }
 
 
-/* footer para las redes sociales de pie de pagina*/
+.about-section {
+    padding: 40px 20px;
+    background-color: #111; 
+    color: #fff;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+    color: #e987d0; 
+}
+
+.about-section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    color: #fff;
+}
+
+
+
 footer {
     background-color: transparent;
     color: white;
