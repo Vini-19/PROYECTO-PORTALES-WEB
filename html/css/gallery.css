@@ -57,9 +57,25 @@ header nav a {
 }
 
 header nav a:hover {
-  background-color: rgba(16, 212, 226, 0.2);
+  background-color: gray;
   color: #fff;
 }
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+
 
 .gallery-container {
   overflow-y: auto;
