@@ -74,6 +74,7 @@ header nav ul li a:hover {
     padding: 20px;
     width: 20%; /* Ajusta el ancho para mejor distribución */
     min-width: 180px;
+    height: 700px;
     background-color: #fff;
     color: #000; /* Asegura que el texto sea visible sobre el fondo blanco */
     border: 1px solid #ddd;
