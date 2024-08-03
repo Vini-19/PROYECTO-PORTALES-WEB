@@ -8,6 +8,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
+  overflow: hidden;
   position: relative;
   min-height: 100vh;
   margin: 0;
@@ -15,16 +16,6 @@ body {
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-}
-
-main {
-  margin-top: 60px; /* Ajusta este valor según la altura del header */
-  flex: 1; /* Permite que el main ocupe el espacio disponible */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
 }
 
 /* Fondo */
@@ -43,7 +34,7 @@ main {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
   min-width: 100%;
   min-height: 100%;
   opacity: 0;
@@ -166,6 +157,12 @@ nav ul li a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+}
+
+/* Agrega un margen superior al contenedor principal para que no quede debajo del header */
+main {
+  margin-top: 60px; /* Ajusta este valor según la altura del header */
+  flex: 1; /* Permite que el main ocupe el espacio disponible */
 }
 
 /* Menu Toggle */

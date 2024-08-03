@@ -10,7 +10,7 @@ header.innerHTML = `
   </div>
       <nav>
             <ul>
-                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
                 <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="about.html">Nostros</a></li>
                 <li><a href="Contactanos.html">Contacto</a></li>
