@@ -4,7 +4,7 @@ const footer = document.querySelector("footer");
 header.innerHTML = `
 <div>
     <a href="inicio.html" class="logo-link">
-      <img src="/html/Pictures/logopeque.jpg" alt="Logo" />
+      <img src="Pictures/logopeque.jpg" alt="Logo" />
       <h1>Hasbun Shop</h1>
     </a>
   </div>
