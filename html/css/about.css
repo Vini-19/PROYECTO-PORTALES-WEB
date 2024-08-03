@@ -10,41 +10,43 @@ body {
   color: #fff;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: transparent;
+  background-color: black; /* Fondo negro */
   color: white;
-  position: absolute;
   width: 100%;
   top: 0;
-  z-index: 1000;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
 }
 
-header div {
+header .logo {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
+  flex: 1; /* Esto hace que el contenedor logo ocupe todo el espacio posible */
 }
 
-header img {
-  width: 64px;
-  height: 64px;
-  border-radius: 100%;
+header .logo img {
+  width: 64px; /* Limita el ancho a 64 píxeles */
+  height: 64px; /* Limita la altura a 64 píxeles */
+  border-radius: 50%; /* Hace que la imagen sea circular */
 }
 
 header h1 {
-  font-size: 1.8rem;
-  margin: 0;
+  margin: 0; /* Elimina el margen del h1 para un mejor alineamiento */
+  font-size: 24px; /* Ajusta el tamaño de la fuente del h1 */
+  flex: 1; /* Esto hace que el h1 ocupe todo el espacio posible */
+  text-align: left; /* Alinea el texto del h1 a la izquierda */
 }
 
 header nav {
+  flex: 1; /* Esto hace que el contenedor nav ocupe todo el espacio posible */
   display: flex;
-  flex-grow: 1;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Alinea los elementos del nav a la derecha */
 }
 
 header nav ul {
@@ -55,21 +57,22 @@ header nav ul {
 }
 
 header nav ul li {
-  margin: 0 10px;
+  margin-left: 15px; /* Añade margen izquierdo a los elementos de la lista */
 }
 
-header nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 0.5rem 1rem;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-header nav a:hover {
-  background-color: rgba(16, 212, 226, 0.2);
+header nav ul li a {
+  display: inline-block;
   color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  transition: background-color 0.5s ease;
 }
+
+header nav ul li a:hover {
+  background-color: #555;
+}
+
+
 
 .about-section {
   padding: 50px 20px;

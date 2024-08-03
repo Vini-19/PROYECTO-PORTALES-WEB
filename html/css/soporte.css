@@ -4,8 +4,7 @@
   font-family: "Open Sans", Arial, sans-serif;
 }
 body,
-h1,
-p,
+
 a {
   margin: 0;
   padding: 0;
@@ -28,26 +27,42 @@ header {
   top: 0;
   box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
 }
-header h1 {
-  margin: 0; /* Elimina el margen del h1 para un mejor alineamiento */
-  font-size: 24px; /* Ajusta el tamaño de la fuente del h1 */
-}
+
 header .logo {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex: 1; /* Esto hace que el contenedor logo ocupe todo el espacio posible */
 }
-.logo img {
+
+header .logo img {
   width: 64px; /* Limita el ancho a 64 píxeles */
   height: 64px; /* Limita la altura a 64 píxeles */
   border-radius: 50%; /* Hace que la imagen sea circular */
-  margin-left: 10px;
 }
+
+header h1 {
+  margin: 0; /* Elimina el margen del h1 para un mejor alineamiento */
+  font-size: 24px; /* Ajusta el tamaño de la fuente del h1 */
+  flex: 1; /* Esto hace que el h1 ocupe todo el espacio posible */
+  text-align: left; /* Alinea el texto del h1 a la izquierda */
+}
+
+header nav {
+  flex: 1; /* Esto hace que el contenedor nav ocupe todo el espacio posible */
+  display: flex;
+  justify-content: flex-end; /* Alinea los elementos del nav a la derecha */
+}
+
 header nav ul {
   display: flex;
-  flex-wrap: wrap;
   list-style: none;
-  margin: 15px;
-  padding: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-left: 15px; /* Añade margen izquierdo a los elementos de la lista */
 }
 
 header nav ul li a {
@@ -61,6 +76,7 @@ header nav ul li a {
 header nav ul li a:hover {
   background-color: #555;
 }
+
 
 /* Hero */
 .hero {
