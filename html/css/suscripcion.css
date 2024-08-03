@@ -21,10 +21,36 @@ header {
     color: white;
 }
 
-.logo img {
-    width: 48px;
-    height: 48px;
+.round-image {
+    width: 50px;  /* Tamaño reducido */
+    height: 50px; /* Tamaño reducido */
+    border-radius: 50%;
+    object-fit: cover; /* Para asegurarte de que la imagen se ajuste bien al contenedor */
 }
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logo-link img {
+    width: 50px; /* Tamaño reducido */
+    height: 50px; /* Tamaño reducido */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    margin-right: 10px;
+}
+
+.logo-link h1 {
+    margin: 0;
+}
+
 
 nav ul {
     list-style: none;
