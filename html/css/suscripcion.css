@@ -139,10 +139,10 @@ h1 {
 }
 
 .subscribe-button button {
-  background-color: #f1c40f;
+  background-color: white;
   border: none;
   padding: 10px 20px;
-  color: white;
+  color: black;
   font-size: 1em;
   border-radius: 5px;
   cursor: pointer;
@@ -150,7 +150,7 @@ h1 {
 }
 
 .subscribe-button button:hover {
-  background-color: #d4ac0d;
+  background-color: grey;
 }
 
 /* Pie de página */
@@ -163,4 +163,16 @@ footer {
   gap: 40px;
   width: 100%;
   bottom: 0;
+}
+
+#basic {
+  background-color: grey;
+}
+
+#premium {
+  background-color: gold;
+}
+
+#family {
+  background-color: green;
 }
