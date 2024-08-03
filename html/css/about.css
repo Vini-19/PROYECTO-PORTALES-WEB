@@ -10,6 +10,14 @@ body {
   color: #fff;
 }
 
+.about-section {
+    padding: 50px 20px;
+    background-color: #111;
+    color: #fff;
+    margin-top: 50px;
+}
+
+
 header {
   display: flex;
   justify-content: space-between;
