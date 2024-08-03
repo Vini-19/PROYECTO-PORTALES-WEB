@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    background-color: transparent; /* gris con 70% de opacidad */
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.round-image {
+    width: 50px;  /* Tamaño reducido */
+    height: 50px; /* Tamaño reducido */
+    border-radius: 50%;
+    object-fit: cover; /* Para asegurarte de que la imagen se ajuste bien al contenedor */
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logo-link img {
+    width: 50px; /* Tamaño reducido */
+    height: 50px; /* Tamaño reducido */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    margin-right: 10px;
+}
+
+.logo-link h1 {
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin:15px;
+    padding:15px;
+}
+
+header nav ul li a {
+    display: inline-block;
+    color:#FFF;
+    text-decoration: none;
+    padding:0.8rem 1rem;
+    transition: background-color 0.5s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+
+/* footer para las redes sociales de pie de pagina*/
+footer {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
+}

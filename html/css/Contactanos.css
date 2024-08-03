@@ -121,15 +121,4 @@ header nav ul li a:hover {
 .contact-form button:hover {
     background-color: #ddd;
 }
-/* footer para las redes sociales de pie de pagina*/
-footer {
-    background-color: transparent;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0.5rem 1rem;
-    flex-wrap: wrap;
-}
 
